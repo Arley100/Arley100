@@ -29,7 +29,7 @@ Repo: [nsec-ctf-toolkit](https://github.com/Arley100/nsec-ctf-toolkit)
 ### ShipReady
 Hackathon project-readiness advisor built during MPC Hacks 2026.  
 Analyzes GitHub repositories and gives judge-facing feedback on README quality, security, setup, UX, and demo readiness.
-Team fork, I built the backend + scoring engine + deployment
+          Team fork, I built the backend + scoring engine + deployment
 
 Repo: [shipready](https://github.com/Arley100/shipready)
 
