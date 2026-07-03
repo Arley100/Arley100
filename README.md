@@ -2,8 +2,6 @@
 
 Software Engineering Co-op student at Concordia University, building practical software across AI products, robotics, cybersecurity, and developer tooling.
 
-Portfolio: [arley-ndaribike-portfolio.vercel.app](https://arley-ndaribike-portfolio.vercel.app)
-
 ## What I build
 
 I like projects that turn messy technical systems into usable tools: AI assistants, robotics software, reproducible security environments, and full-stack applications with clear product value.
