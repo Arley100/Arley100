@@ -2,6 +2,9 @@
 
 Software Engineering Co-op student at Concordia University, building practical software across AI products, robotics, cybersecurity, and developer tooling.
 
+🎬 **Research Film:** The Boring Layer  
+https://youtu.be/dcG4GsKA-uo
+
 ## What I build
 
 I like projects that turn messy technical systems into usable tools: AI assistants, robotics software, reproducible security environments, and full-stack applications with clear product value.
