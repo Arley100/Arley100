@@ -9,19 +9,19 @@ https://youtu.be/dcG4GsKA-uo
 
 I like projects that turn messy technical systems into usable tools: AI assistants, robotics software, reproducible security environments, and full-stack applications with clear product value.
 
-## Current research: The boring layer
+## Current research: The Boring Layer
 
-An ongoing research program on AI agent governance, run across three public repositories. It does not solve a problem yet. It asks one and reports what actually happened.
+An ongoing research program on AI agent governance, conducted across three public repositories. It does not claim to solve AI trust. It asks a narrower question and reports what actually happened.
 
-The question: before AI agents touch consequential systems like funds transfers, can the trust layer be built the way boring infrastructure is built, deterministic, auditable, and honest about what it has not proven?
+The question: before AI agents touch consequential systems such as funds transfers, can the trust layer be built the way boring infrastructure is built—deterministic, auditable, and honest about what it has not proven?
 
-- [agent-preflight](https://github.com/Arley100/agent-preflight): classifies an agent's intended action by domain and risk tier, then injects matching governance rules before it acts. Deterministic, no LLM in the pipeline.
-- [disproof-harness](https://github.com/Arley100/disproof-harness): a falsification engine for executable claims. Survival must be earned through paired controls; the words verified and proven are banned by an invariant test.
-- [knowledge-refinery](https://github.com/Arley100/knowledge-refinery): pre-registered experiments on whether any of this scaffolding measurably changes agent behavior.
+- [agent-preflight](https://github.com/Arley100/agent-preflight): classifies an agent's intended action by domain and risk tier, then injects matching governance rules before it acts. Deterministic, with no LLM in the pipeline.
+- [disproof-harness](https://github.com/Arley100/disproof-harness): a falsification engine for executable claims. Survival must be earned through paired controls; the words verified and proven are prohibited by an invariant test.
+- [knowledge-refinery](https://github.com/Arley100/knowledge-refinery): pre-registered experiments testing whether this governance scaffolding measurably changes agent behavior.
 
-First finding (Milestone 1): the evidence-refined rulebook did not beat the naive baseline. 96.25% vs 87.5% primary accuracy, against a pre-registered bar of +10 points. Both safety guardrails held in every run. The deficit traced to two scenarios out of sixteen, and the result is published as a null result with the full evidence chain, frozen hashes, and a reproducible bootstrap.
+First finding, Milestone 1: the naive baseline achieved 96.25% primary accuracy, while the evidence-refined rulebook achieved 87.5%, missing the pre-registered requirement that refinement improve performance by at least 10 percentage points. Both safety guardrails held in every run. The deficit was concentrated in two of sixteen scenarios, and the null result is published with its full evidence chain, frozen hashes, and reproducible bootstrap.
 
-Interesting so far, solved: nothing. That is the point of pre-registering.
+Interesting so far. Definitively solved: nothing. That is the point of pre-registering the experiment.
 
 ## Selected Projects
 
