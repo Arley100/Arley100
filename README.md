@@ -1,60 +1,50 @@
-# Hi, I'm Arley 👋
+# Arley Ndaribike
 
-Software Engineering Co-op student at Concordia University, building practical software across AI products, robotics, cybersecurity, and developer tooling.
+**Software Engineering Co-op student at Concordia University** | Montréal, QC
 
-🎬 **Research Film:** The Boring Layer  
-https://youtu.be/dcG4GsKA-uo
+I build practical software where reliability matters: AI products whose outputs can be checked, robotics software, and reproducible security tooling. My current research asks how far deterministic, auditable infrastructure can go in governing AI agents, and I publish the results, including the ones that did not work.
 
-## What I build
+[Portfolio](https://arley-ndaribike-portfolio.vercel.app/) · [LinkedIn](https://www.linkedin.com/in/arley-ndaribike-1b1a431a1) · [Research film: The Boring Layer](https://youtu.be/dcG4GsKA-uo)
 
-I like projects that turn messy technical systems into usable tools: AI assistants, robotics software, reproducible security environments, and full-stack applications with clear product value.
+---
 
-## Current research: The Boring Layer
+## Research: The Boring Layer
 
-An ongoing research program on AI agent governance, conducted across three public repositories. It does not claim to solve AI trust. It asks a narrower question and reports what actually happened.
+An ongoing research program on AI agent governance, conducted across three public repositories. It does not claim to solve AI trust. It asks one narrow question: before an agent touches a consequential system such as a funds transfer, can the trust layer be built the way boring infrastructure is built, meaning deterministic, auditable, and explicit about what it has not proven?
 
-The question: before AI agents touch consequential systems such as funds transfers, can the trust layer be built the way boring infrastructure is built—deterministic, auditable, and honest about what it has not proven?
+| Repository | Purpose |
+| --- | --- |
+| [agent-preflight](https://github.com/Arley100/agent-preflight) | Classifies an agent's intended action by domain and risk tier, then injects matching governance rules before the agent acts. Deterministic, with no LLM in the pipeline. |
+| [disproof-harness](https://github.com/Arley100/disproof-harness) | Falsification-first claim checker with a closed five-verdict vocabulary and paired controls. Survival is rationed; disproof is not. |
+| [knowledge-refinery](https://github.com/Arley100/knowledge-refinery) | Pre-registered experiments testing whether this governance scaffolding measurably changes agent behavior. |
 
-- [agent-preflight](https://github.com/Arley100/agent-preflight): classifies an agent's intended action by domain and risk tier, then injects matching governance rules before it acts. Deterministic, with no LLM in the pipeline.
-- [disproof-harness](https://github.com/Arley100/disproof-harness): a falsification engine for executable claims. Survival must be earned through paired controls; the words verified and proven are prohibited by an invariant test.
-- [knowledge-refinery](https://github.com/Arley100/knowledge-refinery): pre-registered experiments testing whether this governance scaffolding measurably changes agent behavior.
+**Milestone 1 result: null.** The naive baseline reached 96.25% primary accuracy and the evidence-refined rulebook reached 87.5%, missing the pre-registered requirement of a 10-point improvement. Both safety guardrails held in every run. The deficit was concentrated in two of sixteen scenarios, and the result is published with its full evidence chain.
 
-First finding, Milestone 1: the naive baseline achieved 96.25% primary accuracy, while the evidence-refined rulebook achieved 87.5%, missing the pre-registered requirement that refinement improve performance by at least 10 percentage points. Both safety guardrails held in every run. The deficit was concentrated in two of sixteen scenarios, and the null result is published with its full evidence chain, frozen hashes, and reproducible bootstrap.
+agent-preflight and disproof-harness are early (v0.1) releases, and each repository states plainly what it does not claim.
 
-Interesting so far. Definitively solved: nothing. That is the point of pre-registering the experiment.
+---
 
-## Selected Projects
+## Selected projects
 
-### SpendGuard AI
-AI spending advisor for business card transactions.  
-Built with TypeScript, Next.js, and Claude API, with a focus on deterministic financial analysis and AI narration guardrails.
-Repo: [spendguard-ai](https://github.com/Arley100/spendguard-ai)
+| Project | What it is | Stack |
+| --- | --- | --- |
+| [memory_360_NOVA](https://github.com/Arley100/memory_360_NOVA) | AI-built project memory in which every sentence is checked against its source. **Winner, CodeML 2026** (Loto-Québec, Challenge 2: Project 360 / NOVA). Built with a team. | TypeScript, Next.js, Claude API |
+| [nineforge](https://github.com/Arley100/nineforge) | Unit testing for the physical world: a deterministic validation layer that simulates, scores, and stress-tests AI-generated machine programs (CNC G-code) before they touch real hardware. | TypeScript |
+| [spendguard-ai](https://github.com/Arley100/spendguard-ai) | AI spending advisor with a narration guard: the model explains only engine-computed numbers and never invents them. Built for Brim Financial. | TypeScript, Claude API |
+| [ros2_ws](https://github.com/Arley100/ros2_ws) | ROS 2 package that maps rover states to CAN frames for the SR-32 Status Indicator Light, for Space Concordia Robotics. | ROS 2, CAN bus |
+| [nsec-ctf-toolkit](https://github.com/Arley100/nsec-ctf-toolkit) | Reproducible Docker-based CTF environment with 60+ pre-installed security tools. | Docker |
+| [shipready](https://github.com/Arley100/shipready) | Pre-flight readiness advisor for hackathon projects: scores a GitHub repo across five dimensions and generates a judge-ready pitch. Built at MPC Hacks 2026; I built the backend, scoring engine, and deployment. | FastAPI, React |
 
-### ROS 2 / CAN Bus Rover Work
-Rover-status software work for Space Concordia Robotics.  
-Maps rover state information into CAN-frame-ready status signals for the SR-32 Status Indicator Light.
-Repo: [ros2_ws](https://github.com/Arley100/ros2_ws)
+Also: [cortex-deck](https://github.com/Arley100/cortex-deck), a focus-recovery console with six cognitive drills and honest scoring against your own baseline (React, TypeScript, IndexedDB), and [offline-code-tutor](https://github.com/Arley100/offline-code-tutor), an offline-first coding assistant benchmark using llama.cpp and GGUF models.
 
-### NSEC CTF Toolkit
-Reproducible Docker-based cybersecurity environment with 60+ preinstalled tools.  
-Built to make CTF practice faster, cleaner, and easier to reproduce.
-Repo: [nsec-ctf-toolkit](https://github.com/Arley100/nsec-ctf-toolkit)
+---
 
-### ShipReady
-Hackathon project-readiness advisor built during MPC Hacks 2026.  
-Team fork, I built the backend + scoring engine + deployment.
-Analyzes GitHub repositories and gives judge-facing feedback on README quality, security, setup, UX, and demo readiness.
-Repo: [shipready](https://github.com/Arley100/shipready)
+## Technical stack
 
-## Current Focus
-
-- AI agent governance and verification research
-- AI-assisted software products
-- Full-stack TypeScript applications
-- ROS 2 and robotics software
-- Docker-based developer tooling
-- Cybersecurity and reproducible environments
-
-## Tech
-
-TypeScript · JavaScript · Python · Java · Docker · React · Next.js · FastAPI · ROS 2 · CAN bus · GitHub Actions
+| Area | Tools |
+| --- | --- |
+| Languages | TypeScript, JavaScript, Python, Java |
+| Web and APIs | React, Next.js, FastAPI, Claude API |
+| Robotics and embedded | ROS 2, CAN bus |
+| Infrastructure and tooling | Docker, GitHub Actions |
+| Security | Reproducible CTF environments, tooling in Docker |
