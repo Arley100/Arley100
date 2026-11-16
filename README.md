@@ -28,6 +28,7 @@ agent-preflight and disproof-harness are early (v0.1) releases, and each reposit
 
 | Project | What it is | Stack |
 | --- | --- | --- |
+| [millennium-signal](https://github.com/Arley100/millennium-signal) | Finds where an insurer's money is going and turns each finding into a human-reviewed action: cleans two raw exports, runs rule-based detections with adjustable thresholds, and drafts and logs every alert. **Winner, Business track, Hack 2 The Future 2026** (SCS Concordia, insurance case). Built in a team of two. [Live demo](https://millennium-signal.vercel.app). | Python, pandas, FastAPI, Next.js, TypeScript |
 | [memory_360_NOVA](https://github.com/Arley100/memory_360_NOVA) | AI-built project memory in which every sentence is checked against its source. **Winner, CodeML 2026** (Loto-Québec, Challenge 2: Project 360 / NOVA). Built with a team. | TypeScript, Next.js, Claude API |
 | [nineforge](https://github.com/Arley100/nineforge) | Unit testing for the physical world: a deterministic validation layer that simulates, scores, and stress-tests AI-generated machine programs (CNC G-code) before they touch real hardware. | TypeScript |
 | [spendguard-ai](https://github.com/Arley100/spendguard-ai) | AI spending advisor with a narration guard: the model explains only engine-computed numbers and never invents them. Built for Brim Financial. | TypeScript, Claude API |
